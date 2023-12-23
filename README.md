@@ -3,6 +3,24 @@
 
 采用[mkdocs+mkdocs-material主题](https://github.com/OI-wiki/mkdocs-material)部署
 
+
+## 部署
+
+```cmd
+# windows
+# 自行安装python3，大多数机器自带了
+# 在一个你喜欢的地方打开cmd（win+r输入cmd回车，弹出的窗口里面输入cd /d 你的路径（必须存在））
+curl https://mirror.ghproxy.com/https://github.com/git-for-windows/git/releases/download/v2.43.0.windows.1/Git-2.43.0-32-bit.exe
+Git-2.43.0-32-bit.exe
+# 参照https://zhuanlan.zhihu.com/p/443527549?utm_id=0  安装指南进行安装
+git clone https://mirror.ghproxy.com/https://github.com/funoi-dev/MPC-wiki
+cd MPC-wiki
+ins.bat
+run.bat
+# 程序成功在127.0.0.1:5566运行，可以进入查看
+```
+
+
 ## 贡献
 
 ### 贡献部分
@@ -14,8 +32,6 @@
 `docs`文件夹存放的是所有wiki文件（markdown格式）
 
 `mkdocs-material`为依赖库
-
-`run.sh`为`linux`下部署命令
 
 `mkdocs.yml`为配置文件
 

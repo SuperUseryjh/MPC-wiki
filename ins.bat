@@ -1,0 +1,1 @@
+pip install Markdown mkdocs mkdocs-material pymdown-extensions typer mkdocs-minify-plugin
