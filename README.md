@@ -10,10 +10,10 @@
 # windows
 # 自行安装python3，大多数机器自带了
 # 在一个你喜欢的地方打开cmd（win+r输入cmd回车，弹出的窗口里面输入cd /d 你的路径（必须存在））
-curl https://mirror.ghproxy.com/https://github.com/git-for-windows/git/releases/download/v2.43.0.windows.1/Git-2.43.0-32-bit.exe
+curl https://download.njuu.cf/git-for-windows/git/releases/download/v2.43.0.windows.1/Git-2.43.0-32-bit.exe
 Git-2.43.0-32-bit.exe
 # 参照https://zhuanlan.zhihu.com/p/443527549?utm_id=0  安装指南进行安装
-git clone https://mirror.ghproxy.com/https://github.com/funoi-dev/MPC-wiki
+git clone https://hub.njuu.cf/funoi-dev/MPC-wiki
 cd MPC-wiki
 ins.bat
 run.bat
