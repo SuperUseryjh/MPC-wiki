@@ -7,6 +7,10 @@ nav:
       - 主页: 数学/小学奥数/main.md
     - 初中课内:
       - 主页: 数学/初中课内/main.md
+      - 8上: 
+        - 因式分解:
+          - 主页: 数学/初中课内/八上/因式分解/定义.md
+          - 例题: 数学/初中课内/八上/因式分解/例题.md
     - 初中竞赛:
       - 主页: 数学/初中竞赛/main.md
   # - 物理:
@@ -27,7 +31,8 @@ extra_css:
 extra_javascript:
 - https://cdnjs.loli.net/ajax/libs/pangu/3.3.0/pangu.min.js
 - js/1.js
-- https://cdnjs.loli.net/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML
+- https://polyfill.io/v3/polyfill.min.js?features=es6
+- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 features: 
   - navigation.instant #- header.autohide  #自动隐藏
   - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
@@ -40,7 +45,6 @@ features:
   - navigation.expand # 打开Tab时左侧目录全部展开
   #- navigation.indexes #启用节索引页后，可以将文档直接附加到节
   - search.share #搜索分享按钮
-language: zh # 一些提示性的文字会变成中文
 markdown_extensions:
   - abbr
   - pymdownx.caret

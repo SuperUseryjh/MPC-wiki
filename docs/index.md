@@ -4,6 +4,8 @@
 
 本项目受 OI Wiki 的启发，在编写过程中参考了诸多代码，在此一并致谢。
 
+本项目参考了人教版教材的一些资源，如有侵权，请联系`MCOI_WTX@outlook.com`
+
 未更新完毕。
 
 ## Material color palette 颜色主题
