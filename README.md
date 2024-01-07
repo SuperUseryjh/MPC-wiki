@@ -3,17 +3,50 @@
 
 采用[mkdocs+mkdocs-material主题](https://github.com/OI-wiki/mkdocs-material)部署
 
+## 如何修改/新建内容并提交更新到本仓库
+
+1、打开[https://github.com/funoi-dev/MPC-wiki](https://github.com/funoi-dev/MPC-wiki)  如果打不开可以看[https://kkgithub.com/funoi-dev/MPC-wiki](https://kkgithub.com/funoi-dev/MPC-wiki)
+
+2、下载并安装[git](https://download.njuu.cf/git-for-windows/git/releases/download/v2.43.0.windows.1/Git-2.43.0-32-bit.exe)和[python(已经安装的可以跳过)](https://www.python.org/ftp/python/3.10.11/python-3.10.11.exe)。其中git的安装教程可以参考[https://zhuanlan.zhihu.com/p/443527549](https://zhuanlan.zhihu.com/p/443527549)，一般改个路径后一路`next`就好了。Python的话打开第一步点`Customize installation`，再点`next`，接着勾选`Add Python to environment varibles`，点击底下的`Browse`按钮选择安装路径，最后点`Install`就好了。
+
+3、测试你的`git`和`python`：按下`win`+`r`，输入`cmd`回车，在弹出的黑框框中分别输入：
+
+```bash
+git -v
+pip -V
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+#第3行为设置镜像源，加速用的
+```
+
+如果弹出内容是类似以下内容的，那么说明你安装成功了。
+
+```bash
+git version xxxxx.xxxxx.xxxxx.xxxxx.xxx
+pip xx.xx.xx from xxxxxxx (python xxxxx)
+```
+
+如果后面那一行（`pip -V`）出现了类似找不到pip或者不是内部或外部命令，也不是可运行的程序的报错，请运行以下代码（也是在刚才的黑框框里面）：
+
+```python
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
+```
+
+然后重试检查安装。
+
+4. 执行以下部署操作
+
+5. 按照后文进行修改
+
+6. 按照后文提交
 
 ## 部署
 
 ```cmd
 # windows
-# 自行安装python3，大多数机器自带了
-# 在一个你喜欢的地方打开cmd（win+r输入cmd回车，弹出的窗口里面输入cd /d 你的路径（必须存在））
-curl https://mirror.ghproxy.com/https://github.com/git-for-windows/git/releases/download/v2.43.0.windows.1/Git-2.43.0-32-bit.exe
-Git-2.43.0-32-bit.exe
-# 参照https://zhuanlan.zhihu.com/p/443527549?utm_id=0  安装指南进行安装
-git clone https://mirror.ghproxy.com/https://github.com/funoi-dev/MPC-wiki
+# win+r输入cmd回车
+cd /d 你想要把项目部署到的位置（例如D:\c++\dev\）
+git clone https://hub.njuu.cf/funoi-dev/MPC-wiki
 cd MPC-wiki
 ins.bat
 run.bat
@@ -29,11 +62,7 @@ run.bat
 
 ### 如何贡献&&代码讲解
 
-`docs`文件夹存放的是所有wiki文件（markdown格式）
-
-`mkdocs-material`为依赖库
-
-`mkdocs.yml`为配置文件
+所有wiki都存放在docs文件夹下，以`.md`(markdown)格式撰写，同时
 
 当需要新建时：
 
