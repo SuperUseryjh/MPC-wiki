@@ -11,6 +11,10 @@ nav:
         - 因式分解:
           - 主页: 数学/初中课内/八上/因式分解/定义.md
           - 例题: 数学/初中课内/八上/因式分解/例题.md
+      - 7上:
+        - 整式:
+          - 定义: 数学/初中课内/七上/整式/定义.md
+          - 易错题: 数学/初中课内/七上/整式/易错题.md
     - 初中竞赛:
       - 主页: 数学/初中竞赛/main.md
   # - 物理:
@@ -32,12 +36,9 @@ extra_javascript:
 - https://cdnjs.loli.net/ajax/libs/pangu/3.3.0/pangu.min.js
 - js/1.js
 - https://polyfill.io/v3/polyfill.min.js?features=es6
-- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+- https://cdn.bootcss.com/mathjax/3.0.5/es5/tex-mml-chtml.js
 features: 
-  - navigation.instant #- header.autohide  #自动隐藏
   - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
-  - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
-  - navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
   - navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
   - navigation.top # 返回顶部的按钮 在上滑时出现
   - search.suggest # 搜索输入一些字母时推荐补全整个单词
