@@ -1,0 +1,68 @@
+site_name: 数理化wiki
+site_url: http://43.139.175.183:5566/
+nav:
+  - 主页: index.md
+  - 数学:
+    - 小学奥数: 
+      - 主页: 数学/小学奥数/main.md
+    - 初中课内:
+      - 主页: 数学/初中课内/main.md
+      - 8上: 
+        - 因式分解:
+          - 主页: 数学/初中课内/八上/因式分解/定义.md
+          - 例题: 数学/初中课内/八上/因式分解/例题.md
+        - 一元二次方程: 
+          - 主页: 数学/初中课内/八上/一元二次方程/定义.md
+      - 7上:
+        - 整式:
+          - 定义: 数学/初中课内/七上/整式/定义.md
+          - 易错题: 数学/初中课内/七上/整式/易错题.md
+    - 初中竞赛:
+      - 主页: 数学/初中竞赛/main.md
+  # - 物理:
+  #   - 初中课内:
+  #   - 初中竞赛:
+  # - 化学:
+  #   - 初中课内:
+  #   - 初中竞赛:
+  - 关于: about.md
+theme:
+  name: material
+  palette:
+    primary: white
+    accent: red
+    scheme: preference
+extra_css:
+  - css/1.css
+extra_javascript:
+- https://cdnjs.loli.net/ajax/libs/pangu/3.3.0/pangu.min.js
+- js/1.js
+- https://polyfill.io/v3/polyfill.min.js?features=es6
+- https://cdn.bootcss.com/mathjax/3.0.5/es5/tex-mml-chtml.js
+features: 
+  - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
+  - navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
+  - navigation.top # 返回顶部的按钮 在上滑时出现
+  - search.suggest # 搜索输入一些字母时推荐补全整个单词
+  - search.highlight # 搜索出的文章关键词加入高亮
+  - navigation.expand # 打开Tab时左侧目录全部展开
+  - navigation.indexes #启用节索引页后，可以将文档直接附加到节
+  - search.share #搜索分享按钮
+markdown_extensions:
+  - abbr
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - md_in_html
+  - pymdownx.arithmatex:  # latex支持
+      generic: true
+  - pymdownx.highlight: # 代码块高亮
+      anchor_linenums: true
+      linenums: true # 显示行号
+      auto_title: true # 显示编程语言名称
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.superfences # 代码块高亮插件
+  - meta # 支持Markdown文件上方自定义标题标签等
